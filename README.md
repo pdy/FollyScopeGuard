@@ -1,6 +1,6 @@
 # Why?
 
-I don't always need or want to deal with whole folly library but still, use few of
+I don't always need or want to deal with whole folly library, but still use few of
 its utilities.
  
 # What is diffrent

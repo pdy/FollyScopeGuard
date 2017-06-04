@@ -5,18 +5,18 @@
 
 # Third party folder layout
 
-3rd/
- gtest/
-   include/
-     gtest
-   lib
- gmock/
-   include/
-     gmock
-   lib
- glog/
-   include/
-     glog
-   lib
+3rd/ <br/>
+ gtest/<br/>
+   include/<br/>
+     gtest<br/>
+   lib<br/>
+ gmock/<br/>
+   include/<br/>
+     gmock<br/>
+   lib<br/>
+ glog/<br/>
+   include/<br/>
+     glog<br/>
+   lib<br/>
 
 
