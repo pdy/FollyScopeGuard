@@ -1,8 +1,8 @@
 # Why?
 
-I don't always want to link whole folly library, but still use few of
+I don't always need or want to deal with whole folly library but still, use few of
 its utilities.
-
+ 
 # What is diffrent
 
 I want simple 'make' utilities so I added Makefiles for library and UTs.
