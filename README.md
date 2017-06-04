@@ -1,17 +1,16 @@
 # Why?
 
-I don't always need or want to deal with whole folly library, but still use few of
-its utilities.
+Folly's scope guard is usefull, but I don't want to deal with whole library when I only need this one module.
  
 # What is diffrent
 
-I want simple 'make' utilities so I added Makefiles for library and UTs.
+Building is simplify to just 'make'. 
 Some headers are merged or removed in order to minimaze files number.
 
 # What I didn't change
 
-Unit tests. Modules needs to retain exact same mechanics as in folly library, 
-so I make sure, that unit tests in unchanged form passes.
+Unit tests. Module needs to keep exact same mechanics as in folly library, 
+so I make sure, that unit tests in unchanged form, passes.
 
 # Build
 
@@ -20,8 +19,8 @@ Linux only. You need:
 * ar to pack library.
 
 ````
-$ git clone https://github.com/severalgh/FollyParts.git
-$ cd FollyParts
+$ git clone https://github.com/severalgh/FollyScopeGuard.git
+$ cd FollyScopeGuard
 $ make
 ````
 
@@ -30,8 +29,8 @@ Build result under dist/release.
 For debug:
 
 ````
-$ git clone https://github.com/severalgh/FollyParts.git
-$ cd FollyParts
+$ git clone https://github.com/severalgh/FollyScopeGuard.git
+$ cd FollyScopeGuard
 $ make debug
 ````
 
@@ -40,7 +39,7 @@ Build result under dist/debug.
 Run unit tests:
 
 ````
-$ cd FollyParts
+$ cd FollyScopeGuard
 $ make && make test
 ````
 

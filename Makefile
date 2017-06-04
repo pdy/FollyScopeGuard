@@ -37,7 +37,7 @@ endif
 DESTBIN := $(BUILD)/lib
 DESTINCLUDE := $(BUILD)/include/folly
 
-all: distr $(DESTBIN)/libfollyparts.a headers 
+all: distr $(DESTBIN)/libfollyscopeguard.a headers 
 debug: all
 test:
 	@cd test && make; cd ..
@@ -53,7 +53,7 @@ OBJS := $(OBJ)/ScopeGuard.o
 headers:
 	@cp -r ./folly/* $(DESTINCLUDE)
 
-$(DESTBIN)/libfollyparts.a: $(OBJS)
+$(DESTBIN)/libfollyscopeguard.a: $(OBJS)
 	$(AR) rc $@ $^
 
 $(OBJ)/%.o: ./folly/%.cpp

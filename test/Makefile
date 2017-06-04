@@ -14,7 +14,7 @@ comp:
 		-L./3rd/gmock/lib \
 		-I./3rd/glog/include \
 		-L./3rd/glog/lib \
-		-lpthread -lfollyparts -lgtest -lgtest_main -lglog
+		-lpthread -lfollyscopeguard -lgtest -lgtest_main -lglog
 		
 strip:
 	@strip a.out
