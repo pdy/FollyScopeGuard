@@ -6,17 +6,17 @@
 # Third party folder layout
 
 3rd/ <br/>
- gtest/<br/>
-   include/<br/>
-     gtest<br/>
-   lib<br/>
- gmock/<br/>
-   include/<br/>
-     gmock<br/>
-   lib<br/>
- glog/<br/>
-   include/<br/>
-     glog<br/>
-   lib<br/>
+&nbsp; gtest/<br/>
+&nbsp;&nbsp;&nbsp;include/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;gtest<br/>
+&nbsp;&nbsp;&nbsp;lib<br/>
+&nbsp; gmock/<br/>
+&nbsp;&nbsp;&nbsp;include/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;gmock<br/>
+&nbsp;&nbsp;&nbsp;lib<br/>
+&nbsp; glog/<br/>
+&nbsp;&nbsp;&nbsp;include/<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;glog<br/>
+&nbsp;&nbsp;&nbsp;lib<br/>
 
 
