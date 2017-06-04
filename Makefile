@@ -32,13 +32,15 @@ else
 	CXXFLAGS = $(FLAGS) $(INCLUDES) -O3 -fstack-protector -Wall
 endif
 
-.PHONY: all clean
+.PHONY: all test clean
 
 DESTBIN := $(BUILD)/lib
 DESTINCLUDE := $(BUILD)/include/folly
 
 all: distr $(DESTBIN)/libfollyparts.a headers 
 debug: all
+test:
+	@cd test && make; cd ..
 
 distr:
 	@mkdir -p $(OBJ) $(DESTBIN) $(DESTINCLUDE)

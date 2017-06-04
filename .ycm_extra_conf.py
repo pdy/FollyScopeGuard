@@ -22,7 +22,10 @@ myFlags = [
     '-std=c++14',
     '-stdlib=libstdc++',
     '-x','c++',
-    '-I','./' 
+    '-I','./',
+    '-I','./test/3rd/googletest-1.8.0/googletest/include',
+    '-I','./test/3rd/googletest-1.8.0/googlemock/include',
+    '-I','./test/3rd/glog/include'
 ]
 
 scriptPath = os.path.dirname(os.path.abspath(__file__));
