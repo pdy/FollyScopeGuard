@@ -7,12 +7,13 @@ all: comp strip run clean
 comp:
 	@$(CXX) -std=c++14 -o a.out TestMain.cpp ScopeGuardTest.cpp \
 		-I../dist/release/include \
-		-I./3rd/googletest-1.8.0/googletest/include \
-		-I./3rd/googletest-1.8.0/googlemock/include \
+		-L../dist/release/lib \
+		-I./3rd/gtest/include \
+		-L./3rd/gtest/lib \
+		-I./3rd/gmock/include \
+		-L./3rd/gmock/lib \
 		-I./3rd/glog/include \
 		-L./3rd/glog/lib \
-		-L../dist/release/lib \
-		-L./3rd/googletest-1.8.0/googlemock/gtest \
 		-lpthread -lfollyparts -lgtest -lgtest_main -lglog
 		
 strip:
