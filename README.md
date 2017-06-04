@@ -16,7 +16,7 @@ so I make sure, that unit tests in unchanged form passes.
 # Build
 
 Linux only. You need: 
-* g++ witch c++14 support
+* g++ with c++14 support
 * ar to pack library.
 
 ````
@@ -37,7 +37,7 @@ $ make debug
 
 Build result under dist/debug.
 
-Run init tests:
+Run unit tests:
 
 ````
 $ cd FollyParts
