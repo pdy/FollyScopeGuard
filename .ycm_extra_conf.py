@@ -23,8 +23,8 @@ myFlags = [
     '-stdlib=libstdc++',
     '-x','c++',
     '-I','./',
-    '-I','./test/3rd/googletest-1.8.0/googletest/include',
-    '-I','./test/3rd/googletest-1.8.0/googlemock/include',
+    '-I','./test/3rd/gtest/include',
+    '-I','./test/3rd/gmock/include',
     '-I','./test/3rd/glog/include'
 ]
 

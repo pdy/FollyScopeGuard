@@ -14,7 +14,7 @@
 
 print-%  : ; @echo $* = $($*)
 
-CXX := g++
+CXX := clang++
 AR := ar
 
 INCLUDES := -I./

@@ -16,7 +16,7 @@
 
 #pragma once
 
-#include <folly/Portability.h>
+#include "Portability.h"
 
 // Disable a couple of warnings due to GTest exporting classes
 // that derive from stdlib classes which aren't explicitly exported.

@@ -22,7 +22,7 @@
 
 //#include <folly/portability/Config.h>
 
-#include <folly/CPortability.h>
+#include "CPortability.h"
 
 // Unaligned loads and stores
 namespace folly {

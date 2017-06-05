@@ -22,8 +22,6 @@
 #include <type_traits>
 #include <utility>
 
-#include <folly/Portability.h>
-#include <folly/Preprocessor.h>
 #include <folly/detail/UncaughtExceptionCounter.h>
 
 namespace folly {
@@ -70,6 +68,32 @@ namespace folly {
  *   and triendl.kj article:
  *     http://www.codeproject.com/KB/cpp/scope_guard.aspx
  */
+
+// Part from Portability.h
+// always inline
+#ifdef _MSC_VER
+# define FOLLY_ALWAYS_INLINE __forceinline
+#elif defined(__clang__) || defined(__GNUC__)
+# define FOLLY_ALWAYS_INLINE inline __attribute__((__always_inline__))
+#else
+# define FOLLY_ALWAYS_INLINE inline
+#endif
+
+// Part from Preprocessor.h
+/**
+ * FB_ANONYMOUS_VARIABLE(str) introduces an identifier starting with
+ * str and ending with a number that varies with the line.
+ */
+#ifndef FB_ANONYMOUS_VARIABLE
+#define FB_CONCATENATE_IMPL(s1, s2) s1##s2
+#define FB_CONCATENATE(s1, s2) FB_CONCATENATE_IMPL(s1, s2)
+#ifdef __COUNTER__
+#define FB_ANONYMOUS_VARIABLE(str) FB_CONCATENATE(str, __COUNTER__)
+#else
+#define FB_ANONYMOUS_VARIABLE(str) FB_CONCATENATE(str, __LINE__)
+#endif
+#endif
+
 class ScopeGuardImplBase {
  public:
   void dismiss() noexcept {
