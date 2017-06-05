@@ -4,10 +4,10 @@ Folly's scope guard is usefull, but I don't want to deal with whole library when
  
 # What is diffrent
 
-Building is simplify to just 'make'. 
-Some headers are merged or removed in order to minimaze files number.
+Building is simplified to just 'make'. 
+Some headers are merged or removed in order to reduce files number.
 
-# What I didn't change
+# What I is not changed
 
 Unit tests. Module needs to keep exact same mechanics as in folly library, 
 so I make sure, that unit tests in unchanged form, passes.
