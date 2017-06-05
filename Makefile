@@ -51,7 +51,7 @@ clean:
 OBJS := $(OBJ)/ScopeGuard.o
 
 headers:
-	@cp -r ./folly/* $(DESTINCLUDE)
+	@cd folly && find . -name '*.h' | cpio -updm ../$(DESTINCLUDE); cd ..
 
 $(DESTBIN)/libfollyscopeguard.a: $(OBJS)
 	$(AR) rc $@ $^
