@@ -1,16 +1,15 @@
-# Why?
+# FollyScopeGuard
 
-Folly's scope guard is usefull, but I don't want to deal with whole library when I only need this one module.
+Extracted scope guard from facebook's folly's repository with minimazed depndencies and simplified building.
  
 # What is diffrent
 
 Building is simplified to just 'make'. 
-Some headers are merged or removed in order to reduce files number.
+Some headers are merged or removed in order to reduce files dependencies.
 
-# What I is not changed
+# What stayed the same
 
-Unit tests. Module needs to keep exact same mechanics as in folly library, 
-so I make sure, that unit tests in unchanged form, passes.
+Unit tests. Module keeps exact same mechanics as in folly library.
 
 # Build
 
